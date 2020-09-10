@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/check.png">RVC</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="home.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu();">About</a></li>
+            <li><a href="login.html" onclick="toggleMenu();">Login</a></li>
+            <li><a href="team.html" onclick="toggleMenu();">Our Team</a></li>
+            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="team" id="team">
+        <div class="heading">
+            <h2>Our Team</h2>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="images/3.jpeg">
+                </div>
+                <div class="contentbox">
+                    <div>
+                        <h2>Rushikesh Bokade</h2>
+                        <p>Computer Department<br>Roll No. 05</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="images/2.jpeg">
+                </div>
+                <div class="contentbox">
+                    <div>
+                        <h2>Vijay V. Borge</h2>
+                        <p>Computer Department<br>Roll No. 06</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="images/6.jpeg">
+                </div>
+                <div class="contentbox">
+                    <div>
+                        <h2>Chetan Gadge</h2>
+                        <p>Computer Department<br>Roll No. 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <div class="copyright">
+        <p>Copyright © 2020 RVC Attendance Managament System. All Right Reserved.</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

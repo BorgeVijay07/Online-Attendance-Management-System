@@ -1,0 +1,913 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(images/classroom7.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+header img:nth-child(1){
+    height: 25px;
+    width: 25px;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 12.5px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header.sticky img:nth-child(1){
+    filter: invert(1);
+    height: 25px;
+    width: 25px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a{
+    color: #111;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+    padding-bottom: 45px;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.about .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentbx{
+    padding-right: 30px;
+    line-height: 24px;
+    max-width: 40%;
+}
+
+.contentbx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content .w50{
+    max-width: 60%;
+}
+
+.bxcontainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.box{
+    position: relative;
+    margin-top: 33px;
+    padding: 40px;
+    width: 360px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    border-radius: 6px;
+}
+
+.box .form{
+    position: relative;
+    width: 100%;
+}
+
+.box .form h2{
+    color: #fff;
+    font-weight: 650;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.box .form .inputbx{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box .form .inputbx input{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    padding: 8px 10px;
+    padding-left: 35px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+}
+
+.box .form .inputbx input::placeholder{
+    color: #fff;
+}
+
+.box .form .inputbx input[type="submit"]{
+    background: #fff;
+    color: #111;
+    max-width: 100px;
+    padding: 8px 10px;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box .form .inputbx img{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transform: scale(0.7);
+    filter: invert(1);
+    height: 25px;
+    width: 25px;
+}
+
+.remember{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.box .form{
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.box .form a{
+    color: #fff;
+}
+
+.login{
+    background: #111;
+}
+
+.heading.white{
+    color: #fff;
+    line-height: 34px;
+}
+
+.bxcontainer .box:hover{
+    background: #2196f3;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.team .card{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.team .card .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+.team .card:hover .box{
+    transform: rotateY(180deg);
+}
+
+.team .card .box .imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.team .card .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team .card .box .contentbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.team .card .box .contentbox div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #159df8,#2196f3);
+    transform: translateZ(100px);
+}
+
+.team .card .box .contentbox div h2{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.team .card .box .contentbox div p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact{
+    background: #111;
+}
+
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .heading{
+    margin-bottom: 60px;
+}
+
+.formbx{
+    min-width: 60%;
+}
+
+.formbx form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactinfo h3, .formbx form h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formbx form input, .formbx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formbx form textarea{
+    min-height: 200px;
+}
+
+.formbx form input::placeholder, .formbx form textarea::placeholder{
+    color: #999;
+}
+
+.formbx form input[type="submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactinfo{
+    min-width: 40%;
+}
+
+.contactinfobx{
+    position: relative;
+}
+
+.contactinfobx .box2{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactinfobx .box2 .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactinfobx .box2 .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactinfobx .box2 .text h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+.copyright{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.register{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formbox{
+    background: #111;
+    width: 80%;
+    padding: 40px;
+}
+
+.formbox h2{
+    width: 100%;
+    color: #2196f3;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formbox .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.formbox .row100:nth-child(3), .formbox .row100:nth-child(4){
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.formbox .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transform: 0.5s;
+}
+
+.formbox .row100 .inputbx{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #2196f3;
+}
+
+.formbox .row100 .inputbx input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+.formbox .row100 .inputbx .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.formbox .row100 .inputbx input:focus + .text,
+.formbox .row100 .inputbx input:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+.formbox .row100 .inputbx .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #2196f3;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.formbox .row100 .inputbx input:focus ~ .line,
+.formbox .row100 .inputbx input:valid ~ .line{
+    height: 100%;
+}
+
+.menu2{
+    font-size: 18px;
+    padding: 0 10px;
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 2px;
+}
+
+select{
+    height: 35px;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #2196f3;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.register .container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.register .container div{
+    margin: 10px;
+}
+
+.register .container div label{
+    cursor: pointer;
+}
+
+.register .container div label [type="checkbox"]{
+    display: none;
+}
+
+.register .container div label span{
+    position: relative;
+    display: inline-block;
+    background: #222;
+    padding: 10px 20px;
+    color: #555;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.register .container div label span:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+.register .container div label [type="checkbox"]:checked ~ span{
+    background: #2196f3;
+    /* box-shadow: 0 2px 20px #2196f3; */
+    color: #fff;
+}
+
+.register .container .head{
+    color: #2196f3;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width:991px)
+{
+    header, header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 27px;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+        background: url(images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 23px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+
+    section{
+        padding: 100px 50px;
+    }
+
+    .banner{
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+        font-size: 1.5em;
+    }
+
+    .banner h3{
+        font-size: 1em;
+    }
+
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2{
+        font-size: 24px;
+    }
+
+    .contentbx h3{
+        font-size: 20px;
+    }
+
+    .about .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentbx{
+        padding-right: 10px;
+    }
+
+    .contentbx, .content .w50{
+        max-width: 100%;
+    }
+
+    .w50{
+        margin-bottom: 20px;
+    }
+
+    .box{
+        width: 300px;
+        height: 380px;
+    }
+
+    .box .form h2{
+        font-size: 20px;
+    }
+
+    .box .form .inputbx input{
+        font-size: 14px;
+        padding: 6px 8px;
+        padding-left: 32px;
+    }
+
+    .box .form .inputbx input[type="submit"]{
+        padding: 6px 8px;
+    }
+
+    .box .form .inputbx img{
+        top: 4px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .box .form{
+        font-size: 13px;
+    }
+
+    .team .card{
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+    }
+
+    .team .card:nth-child(1), .team .card:nth-child(2){
+        margin-top: 0;
+    }
+
+    .contact .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactinfo{
+        margin: 20px 0;
+    }
+
+    .formbox{
+        padding: 20px;
+    }
+
+    .formbox h2{
+        font-size: 25px;
+    }
+
+    .formbox .row100 .inputbx input{
+        font-size: 15px;
+    }
+
+    .formbox .row100 .inputbx .text{
+        font-size: 15px;
+    }
+
+    .formbox .row100 .inputbx{
+        height: 35px;
+    }
+
+    .menu2{
+        font-size: 15px;
+    }
+
+    select{
+        height: 30px;
+    }
+
+    input[type="submit"]{
+        font-size: 15px;
+    }
+
+    .register .container .head{
+        padding: 15px 10px;
+        font-size: 15px;
+    }
+
+    .register .container div label span{
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:600px){
+    header, header.sticky{
+        padding: 20px 20px;
+    }
+
+    .about .heading{
+        padding-bottom: 20px;
+    }
+
+    .heading{
+        padding-bottom: 5px;
+    }
+
+    .banner{
+        padding: 150px 20px 100px;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    .w50 img{
+        width: 100%;
+    }
+
+    .bxcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright{
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .formbox{
+        padding: 15px;
+    }
+
+    .formbox h2{
+        font-size: 22px;
+    }
+
+    .formbox .row100:nth-child(4){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .formbox .row100:nth-child(3){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .formbox .row100:nth-child(2){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .formbox .row100:nth-child(5){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .formbox .row100 .inputbx input{
+        font-size: 15px;
+    }
+
+    .formbox .row100 .inputbx .text{
+        font-size: 15px;
+    }
+
+    .formbox .row100 .inputbx{
+        height: 35px;
+    }
+
+    .menu2{
+        font-size: 15px;
+    }
+
+    select{
+        height:30px;
+    }
+
+    input[type="submit"]{
+        font-size: 15px;
+    }
+
+}

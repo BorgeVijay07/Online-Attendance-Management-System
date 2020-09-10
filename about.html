@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/check.png">RVC</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="home.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu();">About</a></li>
+            <li><a href="login.html" onclick="toggleMenu();">Login</a></li>
+            <li><a href="team.html" onclick="toggleMenu();">Our Team</a></li>
+            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About System</h2>
+        </div>
+            <div class="content">
+                <div class="contentbx w50">
+                    <h3>Go Paperless, Go Digital.</h3>
+                    <p>In today's competitive world, with increasing working hours and less classroom time, teachers 
+                        need tools which help them manage precious class time efficiently. Instead of focusing on 
+                        teaching, teachers are often stuck with completing formal duties, for eg. taking attendance. 
+                        Manually taking attendance and marking it in registers, makes the daily attendance a mundane 
+                        task for the faculty and unnecessarily consumes classroom time.<br><br>
+                        To overcome such inefficient processes, there are various software available to speed up the 
+                        attendance process and reduce manual work. An online attendance management system or e-attendance
+                         is one of them, which is developed to automate the daily attendance in schools. Additionally, 
+                         it helps to maintain accurate records and generate summarized student attendance reports.
+                    </p>
+                </div>
+                <div class="w50">
+                    <img src="images/students.jpg" class="img">
+                </div>
+            </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright © 2020 RVC Attendance Managament System. All Right Reserved.</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

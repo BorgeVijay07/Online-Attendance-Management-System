@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/check.png">RVC</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="home.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu();">About</a></li>
+            <li><a href="login.html" onclick="toggleMenu();">Login</a></li>
+            <li><a href="team.html" onclick="toggleMenu();">Our Team</a></li>
+            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="login" id="login">
+        <div class="heading white">
+            <h2>Login Here</h2>
+        </div>
+        <div class="bxcontainer">
+            <div class="box">
+                <div class="form">
+                    <h2>Teacher Login</h2>
+                    <form>
+                        <div class="inputbx">
+                            <input type="text" placeholder="Username">
+                            <img src="images/user.png">
+                        </div>
+                        <div class="inputbx">
+                            <input type="password" placeholder="Password">
+                            <img src="images/lock.png">
+                        </div>
+                        <label class="remember"><input type="checkbox">Remember Me</label>
+                        <div class="inputbx">
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
+                    <p>Forget <a href="#">Password</a></p>
+                    <p>Need an <a href="registration.html">Account</a></p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="form">
+                    <h2>Admin Login</h2>
+                    <form>
+                        <div class="inputbx">
+                            <input type="text" placeholder="Username">
+                            <img src="images/user.png">
+                        </div>
+                        <div class="inputbx">
+                            <input type="password" placeholder="Password">
+                            <img src="images/lock.png">
+                        </div>
+                        <label class="remember"><input type="checkbox">Remember Me</label>
+                        <div class="inputbx">
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
+                    <p>Forget <a href="#">Password</a></p>
+                </div>
+            </div>
+            </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright © 2020 RVC Attendance Managament System. All Right Reserved.</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
